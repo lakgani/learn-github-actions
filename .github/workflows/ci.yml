@@ -10,7 +10,7 @@ jobs:
     - name: create
       run: echo "Hello World" >> "${{ env.ARTIFACT_NAME }}"
     - name: upload
-      uses: actions/upload-artifact
+      uses: actions/upload-artifact@v2
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: ${{ env.ARTIFACT_NAME }}
